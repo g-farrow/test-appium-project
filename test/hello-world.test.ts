@@ -1,0 +1,25 @@
+import { remote } from 'webdriverio'
+import { assert } from 'chai'
+
+describe('Hello world', function () {
+  it('Making the tests work', async function () {
+    const client = await remote({
+      capabilities: {
+        automationName: 'uiautomator2',
+        platformName: 'android',
+        deviceName: 'RF8M21KYYEH',
+        browserName: 'chrome'
+      },
+      path: '/wd/hub',
+      port: parseInt(process.env.APPIUM_PORT || '4723'),
+      logLevel: 'info'
+    })
+
+    await client.url('https://www.google.com')
+    const title = await client.getTitle()
+    assert.equal(title, 'Google')
+    console.log('Online check completed')
+
+    await client.deleteSession()
+  })
+})

@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "lib": ["es6", "dom"],
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "removeComments": false,
+    "sourceMap": false,
+    "strictPropertyInitialization": true,
+    "strictNullChecks": true,
+    "target": "es2019",
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["node", "webdriverio/sync", "@wdio/mocha-framework", "mocha"]
+  },
+  "include": ["./test/**/*.ts"],
+  "exclude": ["node_modules"]
+}

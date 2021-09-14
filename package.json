@@ -22,9 +22,9 @@
   "devDependencies": {
     "@testing-library/webdriverio": "^3.0.4",
     "@types/chai": "^4.2.21",
+    "@types/mocha": "^9.0.0",
     "@types/node": "^16.9.1",
     "@types/webdriverio": "^4.13.3",
-    "@wdio/mocha-framework": "^7.12.5",
     "appium": "^1.21.0",
     "assert": "^2.0.0",
     "chai": "^4.3.4",

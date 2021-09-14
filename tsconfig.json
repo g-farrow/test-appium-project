@@ -10,7 +10,7 @@
     "strictNullChecks": true,
     "target": "es2019",
     "typeRoots": ["./node_modules/@types"],
-    "types": ["node", "webdriverio/sync", "@wdio/mocha-framework", "mocha"]
+    "types": ["node", "webdriverio/sync", "mocha"]
   },
   "include": ["./test/**/*.ts"],
   "exclude": ["node_modules"]
